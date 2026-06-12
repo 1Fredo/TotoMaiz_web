@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link rel="stylesheet" href="Estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    
+     <nav class="menu-navegacion">
+        
+        <div class="menu-cabecera">
+            <a href="index.html">
+                <img src="logo_totomaiz.png" height="65" alt="Logotipo">
+            </a>
+            <button id="boton-hamburguesa" class="hamburger">☰</button>
+        </div>
+        
+        <ul id="menu-enlaces">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Servicios.html">Servicios y Productos</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+        
+    </nav>
+   
+    
+    <h1 style="text-align: center;">Sobre Nosotros: </h1>
+
+    <main class="contenedor-principal2">
+
+      <section class="columna-foto">
+       <img src="banner2.png" alt="banner2" >
+      </section>
+
+      <section class="columna-texto">
+        <h2 style="font-size: 70px;"> Descripción del corporativo:</h2>
+       <p> TotoMaíz es una marca dedicada a la elaboración y comercialización de
+totopos artesanales elaborados con ingredientes seleccionados, enfocándose
+en ofrecer productos con sabor tradicional, variedad y una identidad cercana
+a la cultura mexicana. La empresa busca combinar calidad, autenticidad e
+innovación mediante diferentes sabores y presencia digital. </p>
+      </section>
+
+    </main>
+
+    <main class="contenedor-principal">
+        <section class="columna-texto">
+            <h2 style="font-size: 70px;"> Misión:</h2>
+            <p>Elaborar y ofrecer totopos artesanales de calidad que conserven el sabor
+tradicional, brindando productos accesibles, variados y auténticos que
+generen una experiencia agradable para los consumidores </p>
+        </section>
+
+        <section class="columna-foto">
+            <img src="mision.jpeg" alt="imagen misión">
+        </section>
+    </main>
+
+    <main class="contenedor-principal2">
+        <section class="columna-foto">
+            <img src="vision.jpeg" alt="imagen Visión">
+        </section>
+
+        <section class="columna-texto">
+           <h2 style="font-size: 70px;"> Visión:</h2>
+            <p> Convertirse en una marca reconocida dentro del mercado de botanas
+artesanales por su calidad, variedad de sabores e identidad mexicana,
+ampliando su presencia mediante plataformas digitales y fortaleciendo la
+preferencia de los consumidores.    </p>
+        </section>
+    </main>
+ 
+
+    <h2 style="text-align: center;" > Valores:</h2>
+    <main class="contenedor-principal3">
+        <section class="columna-texto">
+           <p> 1-Calidad: <br> ofrecer productos elaborados cuidadosamente. <br> <br>
+2-Tradición: conservar sabores inspirados en costumbres mexicanas.</p>
+        </section>  
+        
+        <section class="columna-texto">
+<p>3-Responsabilidad: <br> compromiso con consumidores y procesos. <br> <br>
+4-Innovación: <br> incorporar nuevas ideas, sabores y estrategias digitales. <p>
+        </section>
+
+         <section class="columna-texto">
+<p>5-Autenticidad: <br> mantener una identidad artesanal y genuina. <br> <br>
+6-Cercanía: <br> generar confianza con consumidores.</p>
+        </section>
+    </main>
+
+
+
+
+    <footer class="sitio-footer">
+  <div class="footer-contenedor">
+    
+    <div class="footer-datos">
+      <p style="color: #ffff; font-size: 25px;">&copy; 2026 TotoMaíz. Todos los derechos reservados.</p>
+      <p style="color: #ffff; font-size: 25px;">Contacto: totomaizmx@gmail.com | Tel: +52 442 737 4837</p>
+      <p style="color: #ffff; font-size: 25px;"> Av. del Maíz #125, Col.Tradición Mexicana, Santiago de Querétaro, Qro.</p>
+    </div>
+
+    <div class="footer-logo">
+       <a href="index.html">
+      <img src="logo_totomaiz.png" alt="Logotipo">
+      </a>
+    </div>
+    
+  </div>
+</footer>
+
+<script>
+        const boton = document.getElementById('boton-hamburguesa');
+        const menu = document.getElementById('menu-enlaces');
+
+        boton.addEventListener('click', () => {
+            menu.classList.toggle('activo');
+        });
+    </script>
+
+</body>
+</html>

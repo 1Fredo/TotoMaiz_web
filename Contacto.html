@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link rel="stylesheet" href="Estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    
+   <nav class="menu-navegacion">
+        
+        <div class="menu-cabecera">
+            <a href="index.html">
+                <img src="logo_totomaiz.png" height="65" alt="Logotipo">
+            </a>
+            <button id="boton-hamburguesa" class="hamburger">☰</button>
+        </div>
+        
+        <ul id="menu-enlaces">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Servicios.html">Servicios y Productos</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+        
+    </nav>
+   
+
+      <main class="contenedor-principal2">
+       
+        <section class="columna-foto">
+               <img src="banner.png" alt="banner">
+        </section>
+
+        <section class="columna-texto" >
+             <h1 style="text-align:center;" class="league-script-regular">Contactos: </h1>
+
+     <h3 style="text-align: center;"><a href="https://www.instagram.com/totomaiz.mx?utm_source=qr&igsh=MWphcHR3ZXhjdjFwdQ==">Instagram: TotoMaiz</a></h3>
+     <h3 style="text-align: center;"><a href="totomaizmx@gmail.com"> Correo electrónico: totomaizmx@gmail.com</a></h3>
+     <h3 style="text-align: center;"><a href="+52 4427374837"> Telefono: +52 442 737 4837</a></h3>
+     <h3 style="text-align: center;"> Av del Maíz #125, Col.Tradición Mexicana, Santiago de Querétaro, Qro.</h3>
+        </section>
+
+   </main>
+
+       <h2>Formulario de Registro Novedades</h2>
+    
+       <!-- Formulario -->
+    <form id="Formulario">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <br>
+        <div>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+        <br>
+        <button type="submit">Registrar</button>
+    </form>
+
+
+
+     <footer class="sitio-footer">
+  <div class="footer-contenedor">
+    
+    <div class="footer-datos">
+      <p style="color: #ffff; font-size: 30px;">&copy; 2026 TotoMaíz. Todos los derechos reservados.</p>
+    </div>
+
+    <div class="footer-logo">
+      <a href="index.html">
+      <img src="logo_totomaiz.png" alt="Logotipo">
+      </a>
+    </div>
+</footer>
+
+
+<script>
+    // Formulario (logica)
+    const formulario = document.getElementById('Formulario');
+
+    // Escuchar a "submit" (cuando se presiona el botón)
+    formulario.addEventListener('submit', function(evento) {
+        // Evita que la página se recargue por defecto
+        evento.preventDefault(); 
+
+        // Captura a los datos de los inputs
+        const valorNombre = document.getElementById('nombre').value;
+        const valorCorreo = document.getElementById('correo').value;
+
+        //Lógica de registro 
+        console.log("Datos del usuario:");
+        console.log("Nombre ingresado: " + valorNombre);
+        console.log("Correo ingresado: " + valorCorreo);
+
+        //Limpiar el formulario después de registrar
+        formulario.reset();
+        alert("Datos registrados en la consola.");
+    });
+</script>
+
+<script>
+        const boton = document.getElementById('boton-hamburguesa');
+        const menu = document.getElementById('menu-enlaces');
+
+        boton.addEventListener('click', () => {
+            menu.classList.toggle('activo');
+        });
+    </script>
+
+</body>
+</html>

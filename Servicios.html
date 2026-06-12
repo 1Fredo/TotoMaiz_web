@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <link rel="stylesheet" href="Estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos y Servicios</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    
+    <nav class="menu-navegacion">
+        
+        <div class="menu-cabecera">
+            <a href="index.html">
+                <img src="logo_totomaiz.png" height="65" alt="Logotipo">
+            </a>
+            <button id="boton-hamburguesa" class="hamburger">☰</button>
+        </div>
+        
+        <ul id="menu-enlaces">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Servicios.html">Servicios y Productos</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+        
+    </nav>
+   
+
+    <h2 style="text-align: center;" > <br> Sabores Disponibles:</h2>
+    <main class="contenedor-principal3">
+        <section class="columna-texto">
+           <h3> 1.- Original: </h3>
+            <p> Sabor natural </p> 
+            <img src="sabornatural.png" class="imagenesproductos" alt="Sabor natural">
+        </section>  
+        
+        <section class="columna-texto">
+            <h3>2.- Limon & Sal: </h3> 
+             <p>Sabor a limon y sal </p>
+             <img src="saborlimon.png" class="imagenesproductos" alt="Sabor limon">          
+        </section>
+
+         <section class="columna-texto">
+           <h3>3.- Chile</h3>
+            <p>Sabor chile y sal</p>
+              <img src="saborchile.png" class="imagenesproductos" alt="Sabor chile y sal">
+        </section>
+    </main>
+
+   <h2 style="text-align: center;"> <br> Servicios:</h2>
+     <main class="contenedor-principal3">
+        <section class="columna-texto">
+           <h3> Venta mayorista </h3>
+            <p> Contactanos, estamos encantados de enviar productos hasta tu negocio por un precio al por mayor </p> 
+        </section>  
+        
+        <section class="columna-texto">
+            <h3> Venta minorista </h3> 
+             <p> Ya disponible en muchas tiendas independeintes </p>         
+        </section>
+
+         <section class="columna-texto">
+           <h3> Capacitacion </h3>
+            <p> Inscribete, pasa el curso y pdrias ser seleccionado para trabajar directamente con nosotros </p>
+        </section>
+    </main>
+
+
+    <footer class="sitio-footer">
+  <div class="footer-contenedor">
+    
+    <div class="footer-datos">
+      <p style="color: #ffff; font-size: 25px;">&copy; 2026 TotoMaíz. Todos los derechos reservados.</p>
+      <p style="color: #ffff; font-size: 25px;">Contacto: totomaizmx@gmail.com | Tel: +52 442 737 4837</p>
+      <p style="color: #ffff; font-size: 25px;"> Av. del Maíz #125, Col.Tradición Mexicana, Santiago de Querétaro, Qro.</p>
+    </div>
+
+    <div class="footer-logo">
+       <a href="index.html">
+      <img src="logo_totomaiz.png" alt="Logotipo">
+      </a>
+    </div>
+    
+  </div>
+</footer>
+
+<script>
+        const boton = document.getElementById('boton-hamburguesa');
+        const menu = document.getElementById('menu-enlaces');
+
+        boton.addEventListener('click', () => {
+            menu.classList.toggle('activo');
+        });
+    </script>
+
+</body>
+</html>
