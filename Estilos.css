@@ -434,11 +434,13 @@
         display: flex; 
     }
 
-    .menu-navegacion ul a {
+  .menu-navegacion ul a {
         text-align: center;
+        justify-content: right; 
         border-top: 1px solid rgba(255, 255, 255, 0.05); 
         width: 100%;
         box-sizing: border-box;
+        padding: 15px; /* espacio vertical en celular */
     }
     /* --- FIN: Ajustes del menú SOLO para celular --- */
 }
