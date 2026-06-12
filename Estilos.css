@@ -418,6 +418,7 @@
     /* 1. Encendemos el botón */
     .hamburger {
         display: block; 
+        text-align: right;
     }
 
     /* 2. Ocultamos la lista por defecto y la hacemos vertical */
